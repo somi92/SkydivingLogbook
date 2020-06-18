@@ -3,3 +3,4 @@ src/serviceWorker.ts
 src/react-app-env.d.ts
 **/*.css
 **/*.svg
+cypress/integration/examples
