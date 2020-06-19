@@ -1,8 +1,8 @@
 using Microsoft.EntityFrameworkCore;
-using Somi92.SkydivingLogbook.Domain.Data.Configuration;
-using Somi92.SkydivingLogbook.Domain.Model;
+using Somi92.SkydivingLogbook.Core.Data.Configuration;
+using Somi92.SkydivingLogbook.Core.Domain;
 
-namespace Somi92.SkydivingLogbook.Domain.Data
+namespace Somi92.SkydivingLogbook.Core.Data
 {
     public class SkydivingLogbookContext : DbContext
     {

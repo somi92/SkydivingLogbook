@@ -1,6 +1,6 @@
 using System;
 
-namespace Somi92.SkydivingLogbook.Domain.Model
+namespace Somi92.SkydivingLogbook.Core.Domain
 {
     public class User
     {

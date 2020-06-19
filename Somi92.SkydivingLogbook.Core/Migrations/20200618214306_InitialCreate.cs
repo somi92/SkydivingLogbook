@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore.Migrations;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
-namespace Somi92.SkydivingLogbook.Domain.Migrations
+namespace Somi92.SkydivingLogbook.Core.Migrations
 {
     public partial class InitialCreate : Migration
     {

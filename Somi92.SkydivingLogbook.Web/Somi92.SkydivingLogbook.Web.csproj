@@ -27,7 +27,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Somi92.SkydivingLogbook.Domain\Somi92.SkydivingLogbook.Domain.csproj" />
+    <ProjectReference Include="..\Somi92.SkydivingLogbook.Core\Somi92.SkydivingLogbook.Core.csproj" />
   </ItemGroup>
 
   <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">
