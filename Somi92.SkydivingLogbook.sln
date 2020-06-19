@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.26124.0
 MinimumVisualStudioVersion = 15.0.26124.0
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Somi92.SkydivingLogbook.Web", "Somi92.SkydivingLogbook.Web\Somi92.SkydivingLogbook.Web.csproj", "{2529A622-C720-4204-8A3F-A2209B40260B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Somi92.SkydivingLogbook.Domain", "Somi92.SkydivingLogbook.Domain\Somi92.SkydivingLogbook.Domain.csproj", "{F9863EEF-9372-4328-971F-471B699DE7B4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Somi92.SkydivingLogbook.Core", "Somi92.SkydivingLogbook.Core\Somi92.SkydivingLogbook.Core.csproj", "{F9863EEF-9372-4328-971F-471B699DE7B4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

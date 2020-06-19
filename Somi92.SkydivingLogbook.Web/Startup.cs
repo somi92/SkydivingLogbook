@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Somi92.SkydivingLogbook.Domain.Data;
+using Somi92.SkydivingLogbook.Core.Data;
 
 namespace Somi92.SkydivingLogbook.Web
 {
