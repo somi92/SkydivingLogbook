@@ -13,6 +13,6 @@ namespace Somi92.SkydivingLogbook.Core.Data
             modelBuilder.ApplyConfiguration(new UserConfiguration());
         }
 
-        public DbSet<User> users { get; set; }
+        public DbSet<User> Users { get; set; }
     }
 }

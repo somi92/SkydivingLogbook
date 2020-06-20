@@ -1,3 +1,4 @@
+using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.SpaServices.ReactDevelopmentServer;
@@ -11,6 +12,7 @@ namespace Somi92.SkydivingLogbook.Web
 {
     public class Startup
     {
+        // TODO: Setup logging and Google sign in
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -26,6 +28,8 @@ namespace Somi92.SkydivingLogbook.Web
 
             services.AddDbContext<SkydivingLogbookContext>(opt =>
                     opt.UseNpgsql(Configuration.GetConnectionString("SkydivingLogbook")));
+
+            services.AddMediatR(typeof(SkydivingLogbookContext));
 
             // In production, the React files will be served from this directory
             services.AddSpaStaticFiles(configuration =>
@@ -56,9 +60,7 @@ namespace Somi92.SkydivingLogbook.Web
 
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapControllerRoute(
-                    name: "default",
-                    pattern: "{controller}/{action=Index}/{id?}");
+                endpoints.MapControllers();
             });
 
             app.UseSpa(spa =>

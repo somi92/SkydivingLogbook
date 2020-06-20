@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Somi92.SkydivingLogbook.Web
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Somi92.SkydivingLogbook.Core", "Somi92.SkydivingLogbook.Core\Somi92.SkydivingLogbook.Core.csproj", "{F9863EEF-9372-4328-971F-471B699DE7B4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Somi92.SkydivingLogbook.Tests", "Somi92.SkydivingLogbook.Tests\Somi92.SkydivingLogbook.Tests.csproj", "{31C8DCB3-7FD9-46C6-8679-B8095A801419}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -44,5 +46,17 @@ Global
 		{F9863EEF-9372-4328-971F-471B699DE7B4}.Release|x64.Build.0 = Release|Any CPU
 		{F9863EEF-9372-4328-971F-471B699DE7B4}.Release|x86.ActiveCfg = Release|Any CPU
 		{F9863EEF-9372-4328-971F-471B699DE7B4}.Release|x86.Build.0 = Release|Any CPU
+		{31C8DCB3-7FD9-46C6-8679-B8095A801419}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31C8DCB3-7FD9-46C6-8679-B8095A801419}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31C8DCB3-7FD9-46C6-8679-B8095A801419}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{31C8DCB3-7FD9-46C6-8679-B8095A801419}.Debug|x64.Build.0 = Debug|Any CPU
+		{31C8DCB3-7FD9-46C6-8679-B8095A801419}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{31C8DCB3-7FD9-46C6-8679-B8095A801419}.Debug|x86.Build.0 = Debug|Any CPU
+		{31C8DCB3-7FD9-46C6-8679-B8095A801419}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31C8DCB3-7FD9-46C6-8679-B8095A801419}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31C8DCB3-7FD9-46C6-8679-B8095A801419}.Release|x64.ActiveCfg = Release|Any CPU
+		{31C8DCB3-7FD9-46C6-8679-B8095A801419}.Release|x64.Build.0 = Release|Any CPU
+		{31C8DCB3-7FD9-46C6-8679-B8095A801419}.Release|x86.ActiveCfg = Release|Any CPU
+		{31C8DCB3-7FD9-46C6-8679-B8095A801419}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
