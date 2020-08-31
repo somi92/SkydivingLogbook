@@ -85,15 +85,22 @@ namespace Somi92.SkydivingLogbook.Tests.IntegrationTests.Fixtures
             });
         }
 
-        public async new void Dispose()
+        public new void Dispose()
         {
             base.Dispose();
 
+            var cleanupScript =
+                "SELECT pg_terminate_backend(pg_stat_activity.pid)\n " +
+                "FROM pg_stat_activity\n " +
+                "WHERE pg_stat_activity.datname = \'SkydivingLogbook_Test\'\n " +
+                "AND pid <> pg_backend_pid();\n " +
+                "DROP DATABASE \"SkydivingLogbook_Test\";";
+
             using (var conn = new NpgsqlConnection(Configuration.GetConnectionString("DefaultAdmin")))
-            using (var cmd = new NpgsqlCommand("DROP DATABASE \"SkydivingLogbook_Test\";", conn))
+            using (var cmd = new NpgsqlCommand(cleanupScript, conn))
             {
-                await conn.OpenAsync();
-                await cmd.ExecuteNonQueryAsync();
+                conn.OpenAsync().Wait();
+                cmd.ExecuteNonQueryAsync().Wait();
             }
         }
     }
